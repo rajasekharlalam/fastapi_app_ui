@@ -50,7 +50,7 @@ def update_products(id:int, product:Product):
             products[i] = product
             return "product details updated"
     return "product details not found"
-
+# delete data in the db using "DELETE" method
 @app.delete("/product")
 def delete_product(id:int):
     for i in range(len(products)):
